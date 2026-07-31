@@ -2,7 +2,7 @@
 # Maybe our 2-parameter header?  We definitely need to provide loopback detection...
 
 # Time message originated
-time stamp
+builtin_interfaces/Time stamp
 
 # Used primarily for loopback detection
 string source

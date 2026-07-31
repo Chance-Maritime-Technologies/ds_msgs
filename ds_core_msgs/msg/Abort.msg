@@ -1,5 +1,5 @@
 # Time of this message; good for logging
-time stamp
+builtin_interfaces/Time stamp
 
 # Signal an abort
 bool abort

@@ -14,7 +14,7 @@
 #
 
 # Time data was received or sent out (i/o time)
-time io_time
+builtin_interfaces/Time io_time
 
 # Sensor source UUID
 uint8[16] source_uuid

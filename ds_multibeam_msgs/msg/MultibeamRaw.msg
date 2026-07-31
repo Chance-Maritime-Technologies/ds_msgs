@@ -40,7 +40,7 @@ uint8[] beamflag
 # Truly raw multibeam data uses travel times rather than ranges;
 # we'll use the one way
 # in seconds
-float32[] twowayTravelTime
+float32[] twoway_travel_time
 
 # Multi-sector multibeams can transmit different sectors at different times
 # The Reson doesn't but we include a TX delay for each beam anyway.
@@ -48,9 +48,9 @@ float32[] twowayTravelTime
 # Overall, therefore, our overall time is:
 #
 # header.stamp: TX cycle starts
-# Each beam's TX time: header.stamp + txDelay[i]
-# Each beam's RX time: header.stamp + txDelay[i] + twowayTravelTime[i]
-float32[] txDelay
+# Each beam's TX time: header.stamp + tx_delay[i]
+# Each beam's RX time: header.stamp + tx_delay[i] + twoway_travel_time[i]
+float32[] tx_delay
 
 # Sonar-reported intensity.  Usually uncalibrated and crude
 float32[] intensity
@@ -58,18 +58,18 @@ float32[] intensity
 # Sonar-reported along-track steering angle (applied to tx beam)
 # + forward, - aft for a downlooking sonar
 # Always in radians
-float32[] angleAlongTrack
+float32[] angle_along_track
 
 # Sonar-reported across-track steering angle (applied to rx beam)
 # + to starboard, - to port for a downlooking sonar
 # Always in radians
-float32[] angleAcrossTrack
+float32[] angle_across_track
 
 # Sonar reported -3db beamwidths
 # May be empty if not reported
 # Always in radians
-float32[] beamwidthAlongTrack
-float32[] beamwidthAcrossTrack
+float32[] beamwidth_along_track
+float32[] beamwidth_across_track
 
 
 

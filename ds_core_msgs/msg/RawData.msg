@@ -9,7 +9,7 @@ std_msgs/Header header
 ds_core_msgs/DsHeader ds_header
 
 
-int8 DATA_OUT=0 
+int8 DATA_OUT=0
 int8 DATA_IN=1
 
 int8 data_direction
